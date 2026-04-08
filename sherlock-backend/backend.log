@@ -1,0 +1,11 @@
+INFO:     Will watch for changes in these directories: ['/home/tendayi/Hermes-Amara/sherlock-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [33748] using StatReload
+INFO:     Started server process [33750]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41638 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52224 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40334 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40350 - "GET /api/v1/delegates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40360 - "GET /api/v1/metrics HTTP/1.1" 200 OK

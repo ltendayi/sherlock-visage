@@ -1,0 +1,38 @@
+
+> sherlock-visage-dashboard@0.0.0 dev
+> vite --host 0.0.0.0
+
+Port 3000 is in use, trying another one...
+
+  VITE v6.4.2  ready in 185 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://10.0.0.4:3001/
+11:48:19 AM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:187:57: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:168:0
+  
+  The character ">" is not valid inside a JSX element
+  185|                <div style={{ fontSize: 12, color: '#8c8c8c' }}>
+  186|                  • Default research: Grok-4-1-fast (0.1x cost)<br />
+  187|                  • Security override: GPT-4o for scores >7.0<br />
+     |                                                           ^
+  188|                  • 7% cost savings vs naive routing
+  189|                </div>
+  
+11:48:19 AM [vite] (client) ✨ new dependencies optimized: react-dom/client
+11:48:19 AM [vite] (client) ✨ optimized dependencies changed. reloading
+11:49:44 AM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:187:57: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:168:0
+  
+  The character ">" is not valid inside a JSX element
+  185|                <div style={{ fontSize: 12, color: '#8c8c8c' }}>
+  186|                  • Default research: Grok-4-1-fast (0.1x cost)<br />
+  187|                  • Security override: GPT-4o for scores >7.0<br />
+     |                                                           ^
+  188|                  • 7% cost savings vs naive routing
+  189|                </div>
+  

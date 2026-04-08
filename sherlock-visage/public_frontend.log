@@ -1,0 +1,1617 @@
+
+> sherlock-visage-dashboard@0.0.0 dev
+> vite --host 0.0.0.0
+
+
+  VITE v6.4.2  ready in 174 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://10.0.0.4:3000/
+12:10:01 PM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:187:57: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:168:0
+  
+  The character ">" is not valid inside a JSX element
+  185|                <div style={{ fontSize: 12, color: '#8c8c8c' }}>
+  186|                  • Default research: Grok-4-1-fast (0.1x cost)<br />
+  187|                  • Security override: GPT-4o for scores >7.0<br />
+     |                                                           ^
+  188|                  • 7% cost savings vs naive routing
+  189|                </div>
+  
+12:17:06 PM [vite] Internal server error: Transform failed with 1 error:
+/home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:187:57: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:168:0
+  
+  The character ">" is not valid inside a JSX element
+  185|                <div style={{ fontSize: 12, color: '#8c8c8c' }}>
+  186|                  • Default research: Grok-4-1-fast (0.1x cost)<br />
+  187|                  • Security override: GPT-4o for scores >7.0<br />
+     |                                                           ^
+  188|                  • 7% cost savings vs naive routing
+  189|                </div>
+  
+      at failureErrorWithLog (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)
+12:18:16 PM [vite] Internal server error: Transform failed with 1 error:
+/home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:187:57: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:168:0
+  
+  The character ">" is not valid inside a JSX element
+  185|                <div style={{ fontSize: 12, color: '#8c8c8c' }}>
+  186|                  • Default research: Grok-4-1-fast (0.1x cost)<br />
+  187|                  • Security override: GPT-4o for scores >7.0<br />
+     |                                                           ^
+  188|                  • 7% cost savings vs naive routing
+  189|                </div>
+  
+      at failureErrorWithLog (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)
+12:34:14 PM [vite] (client) ✨ new dependencies optimized: antd, @ant-design/icons
+12:34:14 PM [vite] (client) ✨ optimized dependencies changed. reloading
+1:04:29 PM [vite] (client) hmr update /src/App.tsx
+1:04:41 PM [vite] (client) hmr update /src/App.tsx
+1:04:41 PM [vite] Internal server error: Transform failed with 1 error:
+/home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:209:57: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:190:0
+  
+  The character ">" is not valid inside a JSX element
+  207|                <div style={{ fontSize: 12, color: '#8c8c8c' }}>
+  208|                  • Default research: Grok-4-1-fast (0.1x cost)<br />
+  209|                  • Security override: GPT-4o for scores >7.0<br />
+     |                                                           ^
+  210|                  • 7% cost savings vs naive routing
+  211|                </div>
+  
+      at failureErrorWithLog (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)
+1:04:53 PM [vite] (client) hmr update /src/App.tsx
+1:04:59 PM [vite] (client) ✨ new dependencies optimized: @react-three/fiber, @react-three/drei, three
+1:04:59 PM [vite] (client) ✨ optimized dependencies changed. reloading
+1:05:59 PM [vite] (client) hmr update /src/App.tsx
+1:06:12 PM [vite] (client) hmr update /src/App.tsx
+1:07:57 PM [vite] (client) hmr update /src/App.tsx
+1:07:58 PM [vite] (client) Pre-transform error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+1:07:59 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:08:03 PM [vite] (client) ✨ new dependencies optimized: framer-motion
+1:08:03 PM [vite] (client) ✨ optimized dependencies changed. reloading
+1:08:04 PM [vite] (client) Pre-transform error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+1:08:08 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:08:27 PM [vite] (client) hmr update /src/App.tsx
+1:08:29 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:14:04 PM [vite] (client) hmr update /src/components/visualization/NairobiFloorPlan.tsx
+1:14:07 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:14:13 PM [vite] (client) hmr update /src/components/visualization/NairobiFloorPlan.tsx
+1:14:15 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:15:44 PM [vite] (client) hmr update /src/components/visualization/SimpleVirtualOffice.tsx
+1:15:46 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:17:22 PM [vite] (client) hmr update /src/components/visualization/VirtualOffice3D.tsx
+1:17:23 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:17:34 PM [vite] (client) hmr update /src/App.tsx
+1:17:35 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:20:38 PM [vite] (client) hmr update /src/components/visualization/NairobiFloorPlan.tsx
+1:20:40 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:20:43 PM [vite] (client) hmr update /src/components/visualization/NairobiFloorPlan.tsx
+1:20:44 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+1:38:37 PM [vite] (client) hmr update /src/App.tsx
+1:38:37 PM [vite] (client) Pre-transform error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+1:38:38 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:42:54 PM [vite] (client) hmr update /src/App.tsx
+1:42:54 PM [vite] (client) Pre-transform error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+1:42:55 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:42:59 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:43:06 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:43:23 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:43:38 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:46:31 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:51:10 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:51:12 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:52:49 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx: Unexpected token (45:1)
+
+  43 |   };
+  44 |
+> 45 |  ) => {
+     |  ^
+  46 |    switch(status) {
+  47 |      case 'active': return '#52c41a';
+  48 |      case 'idle': return '#fa8c16';
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/App.tsx:45:1
+  43 |    };
+  44 |  
+  45 |   ) => {
+     |   ^
+  46 |     switch(status) {
+  47 |       case 'active': return '#52c41a';
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.unexpected (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6619:16)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11442:22)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12895:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12100:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12075:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11687:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12421:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseVar (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13384:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9408:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9508:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12744:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:13316:36)
+1:57:07 PM [vite] (client) hmr update /src/App.tsx
+1:57:08 PM [vite] (client) Pre-transform error: Failed to resolve import "./AuthOverlay.css" from "src/components/auth/AuthOverlay.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/auth/AuthOverlay.tsx:8:7
+  17 |  var _s = $RefreshSig$();
+  18 |  import { useState, useEffect } from "react";
+  19 |  import "./AuthOverlay.css";
+     |          ^
+  20 |  const AuthOverlay = ({
+  21 |    onAuthSuccess,
+1:57:09 PM [vite] Internal server error: Failed to resolve import "./AuthOverlay.css" from "src/components/auth/AuthOverlay.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/auth/AuthOverlay.tsx:8:7
+  17 |  var _s = $RefreshSig$();
+  18 |  import { useState, useEffect } from "react";
+  19 |  import "./AuthOverlay.css";
+     |          ^
+  20 |  const AuthOverlay = ({
+  21 |    onAuthSuccess,
+      at TransformPluginContext._formatLog (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:42553:41)
+      at TransformPluginContext.error (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:42550:16)
+      at normalizeUrl (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:40529:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:40648:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:40575:7)
+      at async EnvironmentPluginContainer.transform (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:42348:18)
+      at async loadAndTransform (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:35740:27)
+      at async viteTransformMiddleware (file:///home/tendayi/Hermes-Amara/sherlock-visage/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:37264:24)
+1:57:09 PM [vite] Internal server error: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx: Unexpected digit after hash token. (142:42)
+
+  140 |                   color:
+  141 |                     demoStatus === 'active' ? '#4CAF50' :
+> 142 |                     demoStatus === 'busy' #2196F3' :
+      |                                           ^
+  143 |                     demoStatus === 'idle' '#FF9800' :
+  144 |                     '#F44336',
+  145 |                   display: 'inline-block'
+  Plugin: vite:react-babel
+  File: /home/tendayi/Hermes-Amara/sherlock-visage/src/components/avatars/AgentAvatarGrid.tsx:142:42
+  140|                    color:
+  141|                      demoStatus === 'active' ? '#4CAF50' :
+  142|                      demoStatus === 'busy' #2196F3' :
+     |                                            ^
+  143|                      demoStatus === 'idle' '#FF9800' :
+  144|                      '#F44336',
+      at constructor (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6599:19)
+      at TypeScriptParserMixin.readToken_numberSign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5942:18)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:6295:14)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4797:11)
+      at TypeScriptParserMixin.getTokenFromCode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5782:10)
+      at TypeScriptParserMixin.next (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:5692:10)
+      at TypeScriptParserMixin.parseLiteralAtNode (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11604:10)
+      at TypeScriptParserMixin.parseLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11609:17)
+      at TypeScriptParserMixin.parseStringLiteral (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11612:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11321:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10986:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10981:21)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10947:27)
+      at TypeScriptParserMixin.parseExprOp (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9306:18)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10908:17)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9603:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9786:20)
+      at /home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:12493:17)
+      at TypeScriptParserMixin.parseObjectProperty (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11950:83)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11978:100)
+      at TypeScriptParserMixin.parseObjPropValue (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9744:18)
+      at TypeScriptParserMixin.parsePropertyDefinition (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11915:17)
+      at TypeScriptParserMixin.parseObjectLike (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11832:21)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/tendayi/Hermes-Amara/sherlock-visage/node_modules/@babel/parser/lib/index.js:10831:21)

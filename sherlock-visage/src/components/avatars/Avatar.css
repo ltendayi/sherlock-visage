@@ -1,0 +1,223 @@
+.agent-avatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.agent-avatar:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.agent-avatar.avatar-small {
+  width: 80px;
+  height: 100px;
+}
+
+.agent-avatar.avatar-medium {
+  width: 120px;
+  height: 140px;
+}
+
+.agent-avatar.avatar-large {
+  width: 180px;
+  height: 200px;
+}
+
+/* Status-specific styles */
+.avatar-status-active {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05));
+  border-color: rgba(76, 175, 80, 0.3);
+}
+
+.avatar-status-busy {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(33, 150, 243, 0.05));
+  border-color: rgba(33, 150, 243, 0.3);
+}
+
+.avatar-status-idle {
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.05));
+  border-color: rgba(255, 152, 0, 0.3);
+}
+
+.avatar-status-error {
+  background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(244, 67, 54, 0.05));
+  border-color: rgba(244, 67, 54, 0.3);
+}
+
+/* Status effects */
+.status-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.status-alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: radial-gradient(circle, rgba(244, 67, 54, 0.4) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.thought-streams {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.thought-bubble {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(33, 150, 243, 0.7);
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.status-zzz {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: rgba(255, 152, 0, 0.9);
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Avatar SVG container */
+.avatar-svg-container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 8px;
+}
+
+.avatar-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Agent name */
+.agent-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-top: 4px;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Status indicator */
+.status-indicator {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.status-active {
+  background-color: #4CAF50;
+  box-shadow: 0 0 8px #4CAF50;
+}
+
+.status-busy {
+  background-color: #2196F3;
+  box-shadow: 0 0 8px #2196F3;
+}
+
+.status-idle {
+  background-color: #FF9800;
+  box-shadow: 0 0 8px #FF9800;
+}
+
+.status-error {
+  background-color: #F44336;
+  box-shadow: 0 0 8px #F44336;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Individual avatar styles */
+.architect-cyborg .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(76, 175, 80, 0.5));
+}
+
+.security-sentinel .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(255, 152, 0, 0.5));
+}
+
+.crisis-firefighter .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(244, 67, 54, 0.5));
+}
+
+.code-commander .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(33, 150, 243, 0.5));
+}
+
+.prototype-dynamo .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(156, 39, 176, 0.5));
+}
+
+.algorithm-oracle .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(255, 87, 34, 0.5));
+}
+
+.archive-scribe .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(121, 85, 72, 0.5));
+}
+
+.generic-agent .avatar-svg {
+  filter: drop-shadow(0 2px 8px rgba(96, 125, 139, 0.5));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .agent-avatar.avatar-medium {
+    width: 100px;
+    height: 120px;
+  }
+  
+  .agent-avatar.avatar-large {
+    width: 140px;
+    height: 160px;
+  }
+  
+  .agent-name {
+    font-size: 10px;
+  }
+}

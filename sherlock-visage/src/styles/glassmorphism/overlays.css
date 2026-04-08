@@ -1,0 +1,381 @@
+/**
+ * GLASSMORPHISM OVERLAY SYSTEM
+ * Tactile feedback & authentication animations
+ * For Sherlock Visage Agent Operations Center 2.0
+ */
+
+/* ===== AUTHENTICATION OVERLAY ===== */
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.95);
+  backdrop-filter: blur(30px) saturate(200%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fade-in-overlay 0.8s ease-out forwards;
+}
+
+.auth-overlay-content {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(40px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 
+    0 40px 120px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(0, 243, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-overlay-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--neon-electric-cyan),
+    transparent
+  );
+  animation: scan-line 3s linear infinite;
+}
+
+/* ===== HAND-PRINT ANIMATION ===== */
+.hand-print-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.hand-print-outline {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  position: relative;
+  animation: rotate-slow 20s linear infinite;
+}
+
+.hand-print-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  fill: none;
+  stroke: var(--neon-electric-cyan);
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-hand 3s ease-out forwards;
+}
+
+.hand-print-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 243, 255, 0.2) 0%,
+    rgba(0, 243, 255, 0.05) 50%,
+    transparent 70%
+  );
+  animation: pulse-glow-auth 2s ease-in-out infinite;
+}
+
+/* ===== FACE-ID ANIMATION ===== */
+.face-id-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.face-id-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.face-id-cell {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  animation: face-id-scan 2s ease-in-out infinite;
+  animation-delay: calc(var(--cell-index) * 0.1s);
+}
+
+.face-id-center {
+  grid-column: 2;
+  grid-row: 2;
+  background: radial-gradient(
+    circle,
+    rgba(0, 243, 255, 0.3) 0%,
+    rgba(0, 243, 255, 0.1) 50%,
+    transparent 70%
+  );
+  border: 1px solid rgba(0, 243, 255, 0.5);
+  animation: face-id-pulse 1.5s ease-in-out infinite;
+}
+
+/* ===== TACTILE FEEDBACK SYSTEM ===== */
+.tactile-feedback {
+  position: relative;
+  overflow: hidden;
+}
+
+.tactile-feedback::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+
+.tactile-feedback:active::after {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+}
+
+/* ===== PRESS EFFECTS ===== */
+.press-effect {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.press-effect:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 
+    0 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ===== HOVER EFFECTS ===== */
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 
+    0 0 30px rgba(0, 243, 255, 0.3),
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.hover-glow-purple:hover {
+  box-shadow: 
+    0 0 30px rgba(157, 78, 221, 0.3),
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* ===== ZOOM FOCUS EFFECT ===== */
+.zoom-focus {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zoom-focus.active {
+  transform: scale(1.05);
+  z-index: 100;
+  box-shadow: 
+    0 0 60px rgba(0, 243, 255, 0.4),
+    0 20px 80px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.blur-background {
+  transition: filter 0.5s ease;
+}
+
+.blur-background.active {
+  filter: blur(10px) brightness(0.7);
+}
+
+/* ===== ANIMATION KEYFRAMES ===== */
+@keyframes fade-in-overlay {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(30px) saturate(200%);
+  }
+}
+
+@keyframes draw-hand {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulse-glow-auth {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes face-id-scan {
+  0%, 100% {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    background: rgba(0, 243, 255, 0.3);
+  }
+}
+
+@keyframes face-id-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(0, 243, 255, 0.3),
+      inset 0 0 10px rgba(0, 243, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 40px rgba(0, 243, 255, 0.5),
+      inset 0 0 20px rgba(0, 243, 255, 0.2);
+  }
+}
+
+/* ===== LOADING STATES ===== */
+.loading-dots {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.loading-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--neon-electric-cyan);
+  animation: loading-dot-bounce 1.4s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes loading-dot-bounce {
+  0%, 80%, 100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* ===== SUCCESS/ERROR STATES ===== */
+.auth-success {
+  animation: auth-success-pulse 0.5s ease-out;
+}
+
+@keyframes auth-success-pulse {
+  0% {
+    box-shadow: 
+      0 0 0 0 rgba(0, 255, 136, 0.4),
+      0 40px 120px rgba(0, 0, 0, 0.8);
+  }
+  70% {
+    box-shadow: 
+      0 0 0 30px rgba(0, 255, 136, 0),
+      0 40px 120px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 0 rgba(0, 255, 136, 0),
+      0 40px 120px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.auth-error {
+  animation: auth-error-shake 0.5s ease-out;
+}
+
+@keyframes auth-error-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .auth-overlay-content {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+  
+  .hand-print-container,
+  .face-id-container {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .hand-print-svg {
+    width: 90px;
+    height: 90px;
+  }
+}

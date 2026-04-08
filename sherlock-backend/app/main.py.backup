@@ -1,0 +1,82 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
+from datetime import datetime
+import psutil
+import os
+
+app = FastAPI(title="Sherlock Visage API", version="1.0.0")
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Mock data
+DELEGATES = [
+    {"id": 1, "name": "Strategic Architect", "status": "active", "model": "DeepSeek-R1", "cost_tier": 2.0},
+    {"id": 2, "name": "Lead Developer", "status": "active", "model": "DeepSeek-V3.2", "cost_tier": 0.3},
+    {"id": 3, "name": "Security Auditor", "status": "idle", "model": "GPT-4o", "cost_tier": 1.0},
+    {"id": 4, "name": "Rapid Prototyper", "status": "active", "model": "grok-4-1-fast-non-reasoning", "cost_tier": 0.1},
+    {"id": 5, "name": "Algorithm Specialist", "status": "idle", "model": "Kimi-K2.5", "cost_tier": 1.5},
+    {"id": 6, "name": "Crisis Resolver", "status": "error", "model": "DeepSeek-R1", "cost_tier": 3.0},
+    {"id": 7, "name": "Documentation Specialist", "status": "active", "model": "text-embedding-3-small", "cost_tier": 0.05},
+]
+
+@app.get("/")
+async def root():
+    return {
+        "service": "Sherlock Visage API",
+        "version": "1.0.0",
+        "status": "running",
+        "timestamp": datetime.now().isoformat()
+    }
+
+@app.get("/api/v1/delegates")
+async def get_delegates():
+    return {
+        "delegates": DELEGATES,
+        "count": len(DELEGATES),
+        "timestamp": datetime.now().isoformat()
+    }
+
+@app.get("/api/v1/metrics")
+async def get_metrics():
+    # Get system metrics
+    disk = psutil.disk_usage('/')
+    memory = psutil.virtual_memory()
+    
+    return {
+        "system": {
+            "health": 80,
+            "disk_usage_percent": disk.percent,
+            "disk_available_gb": disk.free / (1024**3),
+            "memory_usage_percent": memory.percent,
+            "uptime_seconds": int(psutil.boot_time())
+        },
+        "cost": {
+            "monthly_current": 425,
+            "monthly_budget_min": 280,
+            "monthly_budget_max": 570,
+            "token_efficiency": 72
+        },
+        "guards": {
+            "delta_only": True,
+            "tiered_memory": True,
+            "cost_gatekeeping": True,
+            "high_cost_alert": True,
+            "compression_enabled": True
+        },
+        "timestamp": datetime.now().isoformat()
+    }
+
+@app.get("/api/v1/system/health")
+async def get_health():
+    return {"status": "healthy", "score": 80}
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
