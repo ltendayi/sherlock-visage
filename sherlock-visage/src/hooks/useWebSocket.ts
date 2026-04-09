@@ -129,8 +129,8 @@ export interface UseWebSocketReturn {
   sendMessage: (type: WebSocketMessageType, payload: any) => void;
 }
 
-// Constants
-const WS_URL = 'ws://localhost:8001/ws/agents';
+// Constants - Uses relative path for Nginx proxy compatibility
+const WS_URL = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/agents`;
 const MAX_RECONNECT_ATTEMPTS = 5;
 const INITIAL_RECONNECT_DELAY = 1000;
 const MAX_RECONNECT_DELAY = 30000;
