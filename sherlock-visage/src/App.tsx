@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Row, Col, Typography, Tabs } from 'antd';
+import { Row, Col, Typography, Tabs, Card, Alert } from 'antd';
 import { AuthOverlay } from './components/auth/AuthOverlay';
 import { BentoHeader } from './components/dashboard/BentoHeader';
 import { AgentRoster } from './components/dashboard/AgentRoster';
-import IsometricOffice from './components/visualization/IsometricOffice';
 import { CostChart } from './components/charts/CostChart';
 import { CrossSystemChart } from './components/charts/CrossSystemChart';
 import { TaskQueue } from './components/tasks/TaskQueue';
@@ -12,6 +11,35 @@ import { VoltLedgerMetrics } from './components/panels/VoltLedgerMetrics';
 import { OperationsTimeline } from './components/timeline/OperationsTimeline';
 import { useWebSocket } from './hooks/useWebSocket';
 import './styles/vanta.css';
+
+// Dynamic import for R3F to prevent build-time errors
+const IsometricOffice = React.lazy(() => import('./components/visualization/IsometricOffice'));
+
+// Fallback 2D visualization when 3D fails
+const SimpleVizFallback: React.FC = () => (
+  <div style={{ 
+    height: '100%', 
+    display: 'flex', 
+    flexDirection: 'column',
+    alignItems: 'center', 
+    justifyContent: 'center',
+    background: 'rgba(10, 10, 15, 0.8)',
+    borderRadius: '12px',
+    padding: '40px'
+  }}>
+    <div style={{ fontSize: '64px', marginBottom: '20px' }}>🏢</div>
+    <h3 style={{ color: '#00f3ff', marginBottom: '10px' }}>Virtual Office</h3>
+    <p style={{ color: 'rgba(255,255,255,0.5)', textAlign: 'center' }}>
+      3D visualization loading...<br/>
+      <span style={{ fontSize: '12px' }}>10 agents • Nairobi HQ</span>
+    </p>
+    <div style={{ marginTop: '20px', display: 'flex', gap: '10px' }}>
+      {['🔵', '🟣', '🟢', '🟡', '🔴', '⚪', '🟠', '⚫', '🔷', '🔶'].map((emoji, i) => (
+        <span key={i} style={{ fontSize: '24px', opacity: 0.7 }}>{emoji}</span>
+      ))}
+    </div>
+  </div>
+);
 
 const { Title, Paragraph } = Typography;
 
@@ -98,7 +126,9 @@ const App: React.FC = () => {
                     label: '3D Office',
                     children: (
                       <div className="h-full rounded-xl overflow-hidden border border-white/10" style={{ minHeight: '500px' }}>
-                        <IsometricOffice simulationEnabled={true} />
+                        <React.Suspense fallback={<SimpleVizFallback />}>
+                          <IsometricOffice simulationEnabled={true} />
+                        </React.Suspense>
                       </div>
                     )
                   },

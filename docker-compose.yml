@@ -1,0 +1,120 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database
+  postgres:
+    image: postgres:16-alpine
+    container_name: sherlock-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: shavi_dev_db
+      POSTGRES_USER: shavi_dev
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-devpassword}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U shavi_dev"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sherlock-network
+
+  # Redis for caching and WebSocket
+  redis:
+    image: redis:7-alpine
+    container_name: sherlock-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-redispass}
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    networks:
+      - sherlock-network
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: ./sherlock-backend
+      dockerfile: Dockerfile
+    container_name: sherlock-backend
+    restart: unless-stopped
+    environment:
+      ENVIRONMENT: production
+      DATABASE_URL: postgresql+asyncpg://shavi_dev:${POSTGRES_PASSWORD:-devpassword}@postgres:5432/shavi_dev_db
+      SQLITE_PATH: /app/data/hermes.db
+      REDIS_URL: redis://:${REDIS_PASSWORD:-redispass}@redis:6379/0
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-secretkey}
+      CORS_ORIGINS: "http://localhost:3000,http://localhost:8080,http://frontend:3000"
+      SERVE_FRONTEND: "true"
+    volumes:
+      - ./sherlock-backend:/app
+      - hermes-data:/app/data
+      - ./sherlock-visage/dist:/app/sherlock-visage/dist
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - sherlock-network
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: sherlock-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - ./sherlock-visage/dist:/usr/share/nginx/html:ro
+    depends_on:
+      - backend
+    networks:
+      - sherlock-network
+
+  # Frontend development (optional)
+  frontend-dev:
+    build:
+      context: ./sherlock-visage
+      dockerfile: Dockerfile.dev
+    container_name: sherlock-frontend-dev
+    restart: unless-stopped
+    volumes:
+      - ./sherlock-visage:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      VITE_API_URL: http://localhost:8000
+      VITE_WS_URL: ws://localhost:8000/ws
+    networks:
+      - sherlock-network
+    stdin_open: true
+    tty: true
+
+volumes:
+  postgres-data:
+  redis-data:
+  hermes-data:
+
+networks:
+  sherlock-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.22.0.0/16

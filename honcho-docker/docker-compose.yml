@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  honcho:
+    build: .
+    container_name: honcho-app
+    restart: unless-stopped
+    volumes:
+      - ./app:/app/app
+      - ./logs:/app/logs
+    environment:
+      - ENVIRONMENT=${ENVIRONMENT:-development}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    env_file:
+      - .env
+    ports:
+      - "9000:8000"
+      - "9001:8080"
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+
+  # Optional Redis for Celery
+  redis:
+    image: redis:7-alpine
+    container_name: honcho-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

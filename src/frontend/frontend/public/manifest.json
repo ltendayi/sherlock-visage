@@ -1,0 +1,16 @@
+{
+  "short_name": "VoltLedger",
+  "name": "VoltLedger - E-Bike Lending",
+  "description": "E-Bike Lending Platform for the Kenyan EV Market",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1890ff",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ]
+}

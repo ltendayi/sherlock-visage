@@ -1,0 +1,17 @@
+# Honcho process definitions
+# Format: process_name: command [args]
+
+# Web server (FastAPI)
+web: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+# Celery worker
+worker: celery -A app.tasks worker --loglevel=info
+
+# Scheduler
+scheduler: python app/scheduler.py
+
+# Monitor
+monitor: python app/monitor.py --interval 60
+
+# Health server
+health: python app/health_server.py --port 8080

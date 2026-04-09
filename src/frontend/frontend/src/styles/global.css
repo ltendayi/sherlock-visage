@@ -1,0 +1,98 @@
+/**
+ * VoltLedger Global Styles
+ * Mobile-first PWA design
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Mobile-first responsive breakpoints */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* Kenyan phone input styling */
+.phone-input .ant-input-prefix {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+/* Card hover effects */
+.bike-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bike-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Status badges */
+.status-available {
+  background-color: #52c41a;
+  color: white;
+}
+
+.status-rented {
+  background-color: #1890ff;
+  color: white;
+}
+
+.status-maintenance {
+  background-color: #faad14;
+  color: white;
+}
+
+/* Loading spinner */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* PWA specific */
+@media (display-mode: standalone) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Safe area for notched phones */
+.safe-area-bottom {
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+}

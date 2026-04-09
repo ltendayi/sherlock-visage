@@ -1,0 +1,25 @@
+[Unit]
+Description=Sherlock Visage Frontend Dashboard
+After=network.target sherlock-backend.service
+Requires=sherlock-backend.service
+
+[Service]
+Type=simple
+User=tendayi
+Group=tendayi
+WorkingDirectory=/home/tendayi/Hermes-Amara/sherlock-visage
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/npm run preview
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=sherlock-frontend
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target
