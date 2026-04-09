@@ -148,3 +148,44 @@ html, body, #root {
     linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
 }
+
+/* Dashboard Tabs */
+.dashboard-tabs .ant-tabs-nav {
+  margin-bottom: 16px !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+}
+
+.dashboard-tabs .ant-tabs-tab {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 16px !important;
+  border: none !important;
+  background: transparent !important;
+  transition: all 0.3s ease !important;
+}
+
+.dashboard-tabs .ant-tabs-tab:hover {
+  color: var(--neon-cyan) !important;
+}
+
+.dashboard-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  color: var(--neon-cyan) !important;
+  background: rgba(0, 243, 255, 0.1) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.dashboard-tabs .ant-tabs-ink-bar {
+  background: var(--neon-cyan) !important;
+  box-shadow: 0 0 10px var(--neon-cyan) !important;
+}
+
+.dashboard-tabs .ant-tabs-content {
+  height: calc(100% - 50px);
+}
+
+.dashboard-tabs .ant-tabs-tabpane {
+  height: 100%;
+}
