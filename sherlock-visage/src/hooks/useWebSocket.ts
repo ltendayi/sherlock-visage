@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
+import type { VoltLedgerUpdateMessage } from '../types/voltledger';
 
 // WebSocket Message Types
 export type WebSocketMessageType = 
@@ -12,6 +13,7 @@ export type WebSocketMessageType =
   | 'task_update' 
   | 'health_update' 
   | 'telemetry_update'
+  | 'voltledger_update'
   | 'system';
 
 // Delegate Update Message
@@ -108,6 +110,7 @@ export type WebSocketMessage =
   | TaskUpdateMessage 
   | HealthUpdateMessage 
   | TelemetryUpdateMessage
+  | VoltLedgerUpdateMessage
   | SystemMessage;
 
 // Hook Return Type
@@ -120,6 +123,7 @@ export interface UseWebSocketReturn {
   costs: CostUpdateMessage['payload'][];
   tasks: TaskUpdateMessage['payload'][];
   health: HealthUpdateMessage['payload'] | null;
+  voltledger: VoltLedgerUpdateMessage['payload'] | null;
   connect: () => void;
   disconnect: () => void;
   sendMessage: (type: WebSocketMessageType, payload: any) => void;
@@ -145,6 +149,7 @@ export const useWebSocket = (): UseWebSocketReturn => {
   const [costs, setCosts] = useState<CostUpdateMessage['payload'][]>([]);
   const [tasks, setTasks] = useState<TaskUpdateMessage['payload'][]>([]);
   const [health, setHealth] = useState<HealthUpdateMessage['payload'] | null>(null);
+  const [voltledger, setVoltledger] = useState<VoltLedgerUpdateMessage['payload'] | null>(null);
 
   // Refs for WebSocket and timers
   const wsRef = useRef<WebSocket | null>(null);
@@ -225,6 +230,10 @@ export const useWebSocket = (): UseWebSocketReturn => {
         if (message.payload.costs) setCosts(message.payload.costs);
         if (message.payload.tasks) setTasks(message.payload.tasks);
         if (message.payload.health) setHealth(message.payload.health);
+        break;
+
+      case 'voltledger_update':
+        setVoltledger(message.payload);
         break;
 
       case 'system':
@@ -364,6 +373,7 @@ export const useWebSocket = (): UseWebSocketReturn => {
     costs,
     tasks,
     health,
+    voltledger,
     connect,
     disconnect,
     sendMessage

@@ -3,6 +3,9 @@
  * Standardized communication format for AI delegate operations
  */
 
+// Re-export VoltLedger types
+export * from './voltledger';
+
 export interface DelegateNode {
   id: string;
   name: string;

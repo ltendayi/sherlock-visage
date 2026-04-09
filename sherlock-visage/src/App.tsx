@@ -5,8 +5,11 @@ import { BentoHeader } from './components/dashboard/BentoHeader';
 import { AgentRoster } from './components/dashboard/AgentRoster';
 import IsometricOffice from './components/visualization/IsometricOffice';
 import { CostChart } from './components/charts/CostChart';
+import { CrossSystemChart } from './components/charts/CrossSystemChart';
 import { TaskQueue } from './components/tasks/TaskQueue';
 import { SystemHealthPanel } from './components/panels/SystemHealthPanel';
+import { VoltLedgerMetrics } from './components/panels/VoltLedgerMetrics';
+import { OperationsTimeline } from './components/timeline/OperationsTimeline';
 import { useWebSocket } from './hooks/useWebSocket';
 import './styles/vanta.css';
 
@@ -23,7 +26,8 @@ const App: React.FC = () => {
     delegates: agents, 
     tasks, 
     costs: telemetry,
-    health: systemHealth 
+    health: systemHealth,
+    voltledger 
   } = useWebSocket();
 
   // Auth overlay bypassed for demo
@@ -99,19 +103,53 @@ const App: React.FC = () => {
                     )
                   },
                   {
+                    key: 'delegates',
+                    label: 'Delegates',
+                    children: (
+                      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '20px', height: '100%' }}>
+                        <AgentRoster />
+                        <TaskQueue tasks={tasks || []} maxTasks={15} />
+                      </div>
+                    )
+                  },
+                  {
                     key: 'analytics',
                     label: 'Cost Analytics',
                     children: <CostChart data={telemetry || []} />
                   },
                   {
-                    key: 'tasks',
-                    label: 'Task Queue',
-                    children: <TaskQueue tasks={tasks || []} />
-                  },
-                  {
                     key: 'health',
                     label: 'System Health',
                     children: <SystemHealthPanel health={systemHealth} />
+                  },
+                  {
+                    key: 'voltledger',
+                    label: 'VoltLedger',
+                    children: (
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', height: '100%', overflow: 'auto' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                          <VoltLedgerMetrics
+                            portfolio={voltledger?.portfolio || null}
+                            fleet={voltledger?.fleet || null}
+                            transactions={voltledger?.transactions || null}
+                            revenue={voltledger?.revenue || []}
+                            sync={voltledger?.sync || null}
+                            isLoading={!voltledger}
+                          />
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                          <CrossSystemChart 
+                            data={voltledger?.correlation || []}
+                            sync={voltledger?.sync || null}
+                          />
+                          <OperationsTimeline 
+                            events={voltledger?.events || []}
+                            maxEvents={15}
+                            isLoading={!voltledger}
+                          />
+                        </div>
+                      </div>
+                    )
                   }
                 ]}
               />

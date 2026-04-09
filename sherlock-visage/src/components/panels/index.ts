@@ -5,3 +5,4 @@
 
 export { SystemHealthPanel } from './SystemHealthPanel';
 export { default as CostMonitoring } from './CostMonitoring';
+export { VoltLedgerMetrics } from './VoltLedgerMetrics';

@@ -9,13 +9,23 @@ import time
 import uuid
 from datetime import datetime, timedelta
 from enum import Enum
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional, Set, Any
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 import uvicorn
+
+# VoltLedger Bridge integration
+try:
+    from voltledger_client import (
+        VoltLedgerClient, VoltLedgerConfig, VoltLedgerMetrics,
+        ConnectionStatus, initialize_voltledger_client
+    )
+    VOLTLEDGER_AVAILABLE = True
+except ImportError:
+    VOLTLEDGER_AVAILABLE = False
 
 
 # ============================================================================
@@ -119,8 +129,8 @@ class AgentDetailsResponse(BaseModel):
     tasks: List[Task]
     queue_position: Optional[int] = None
 
-
 class SystemStatusResponse(BaseModel):
+    """Overall system status response"""
     total_agents: int
     online_agents: int
     busy_agents: int
@@ -130,6 +140,176 @@ class SystemStatusResponse(BaseModel):
     total_tasks_failed: int
     total_cost_usd: float
     timestamp: datetime = Field(default_factory=datetime.utcnow)
+
+
+# ============================================================================
+# VoltLedger Bridge Models
+# ============================================================================
+
+class VoltLedgerStatusResponse(BaseModel):
+    """VoltLedger bridge connection status"""
+    connected: bool
+    status: str
+    last_sync: Optional[str] = None
+    sync_count: int = 0
+    base_url: str = "http://localhost:5000"
+    polling_interval: int = 30
+    message: str = ""
+
+
+class VoltLedgerTaskItem(BaseModel):
+    """Mapped VoltLedger loan as task item for dashboard"""
+    id: str
+    type: str = "voltledger_loan"
+    title: str
+    description: str
+    status: str
+    progress: float
+    created_at: Optional[str] = None
+    priority: str = "medium"
+    assigned_to: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+
+class VoltLedgerAgentWorkload(BaseModel):
+    """VoltLedger bike as agent workload indicator"""
+    bike_id: str
+    model: str
+    status: str
+    assigned_agent: Optional[str] = None
+    battery_health: float = 100.0
+    mileage: float = 0.0
+    maintenance_required: bool = False
+    location: Optional[str] = None
+
+
+class VoltLedgerMetricsResponse(BaseModel):
+    """VoltLedger aggregated metrics response"""
+    connection_status: str
+    last_sync: Optional[str] = None
+    
+    # Loan metrics
+    total_loans: int = 0
+    active_loans: int = 0
+    pending_loans: int = 0
+    completed_loans: int = 0
+    defaulted_loans: int = 0
+    default_rate: float = 0.0
+    
+    # Financial metrics
+    total_amount: float = 0.0
+    total_repaid: float = 0.0
+    
+    # Bike metrics
+    bikes_available: int = 0
+    bikes_assigned: int = 0
+    bikes_maintenance: int = 0
+    total_bikes: int = 0
+    
+    # Agent efficiency metrics
+    processing_rate: float = 0.0  # loans per hour
+    agent_efficiency_score: float = 0.0  # 0-100
+    agent_workload_indicator: float = 0.0  # 0-100
+    avg_loan_duration_days: float = 0.0
+    
+    # Dashboard integration
+    tasks: List[VoltLedgerTaskItem] = Field(default_factory=list)
+    workloads: List[VoltLedgerAgentWorkload] = Field(default_factory=list)
+
+
+class VoltLedgerSyncResponse(BaseModel):
+    """VoltLedger manual sync response"""
+    success: bool
+    message: str
+    sync_timestamp: str = Field(default_factory=lambda: datetime.utcnow().isoformat())
+    data_freshness: str = "fresh"
+
+
+# ============================================================================
+# VoltLedger Bridge Integration
+# ============================================================================
+
+class VoltLedgerBridge:
+    """VoltLedger bridge integration handler"""
+    
+    def __init__(self):
+        self.client: Optional[VoltLedgerClient] = None
+        self._initialized = False
+        self._last_metrics: Optional[VoltLedgerMetrics] = None
+    
+    async def initialize(self):
+        """Initialize VoltLedger client"""
+        if not VOLTLEDGER_AVAILABLE:
+            return
+        
+        try:
+            config = VoltLedgerConfig(
+                base_url="http://localhost:5000",
+                polling_interval=30,
+                cache_ttl=30
+            )
+            self.client = VoltLedgerClient(config)
+            await self.client.initialize()
+            
+            # Register callback for metrics updates
+            self.client.on_update(self._on_metrics_update)
+            
+            # Start background polling
+            await self.client.start_polling()
+            
+            self._initialized = True
+        except Exception as e:
+            print(f"VoltLedger bridge initialization failed: {e}")
+    
+    def _on_metrics_update(self, metrics: VoltLedgerMetrics):
+        """Handle metrics updates from VoltLedger client"""
+        self._last_metrics = metrics
+    
+    async def shutdown(self):
+        """Cleanup VoltLedger client"""
+        if self.client:
+            await self.client.close()
+            self.client = None
+        self._initialized = False
+    
+    async def sync(self) -> bool:
+        """Trigger manual sync"""
+        if self.client:
+            await self.client.sync()
+            return True
+        return False
+    
+    @property
+    def is_initialized(self) -> bool:
+        return self._initialized and self.client is not None
+    
+    @property
+    def is_connected(self) -> bool:
+        if self.client:
+            return self.client.is_connected
+        return False
+    
+    @property
+    def metrics(self) -> Optional[VoltLedgerMetrics]:
+        if self.client:
+            return self.client.metrics
+        return self._last_metrics
+    
+    @property
+    def sync_count(self) -> int:
+        if self.client:
+            return self.client.sync_count
+        return 0
+    
+    @property
+    def last_sync(self) -> Optional[datetime]:
+        if self.client:
+            return self.client.last_sync
+        return None
+
+
+# Global VoltLedger bridge instance
+voltledger_bridge = VoltLedgerBridge()
 
 
 # ============================================================================
@@ -161,12 +341,18 @@ class AgentRegistry:
                 )
                 self._agents[agent.id] = agent
         
+        # Initialize VoltLedger bridge
+        await voltledger_bridge.initialize()
+        
         # Start background tasks
         self._cost_tracking_task = asyncio.create_task(self._cost_tracker())
         self._status_simulation_task = asyncio.create_task(self._status_simulator())
     
     async def shutdown(self):
         """Cleanup background tasks"""
+        # Shutdown VoltLedger bridge
+        await voltledger_bridge.shutdown()
+        
         if self._cost_tracking_task:
             self._cost_tracking_task.cancel()
         if self._status_simulation_task:
@@ -429,6 +615,35 @@ class ConnectionManager:
             "timestamp": datetime.utcnow().isoformat(),
             "data": status.model_dump(),
         })
+    
+    async def broadcast_voltledger_update(self, metrics: Any):
+        """Broadcast VoltLedger metrics update to all clients"""
+        from voltledger_client import VoltLedgerMetrics
+        
+        if isinstance(metrics, VoltLedgerMetrics):
+            data = {
+                "connection_status": metrics.connection_status.value,
+                "last_sync": metrics.last_sync.isoformat() if metrics.last_sync else None,
+                "total_loans": metrics.summary.total_loans if metrics.summary else 0,
+                "active_loans": metrics.summary.active_loans if metrics.summary else 0,
+                "pending_loans": metrics.summary.pending_loans if metrics.summary else 0,
+                "completed_loans": metrics.summary.completed_loans if metrics.summary else 0,
+                "default_rate": metrics.summary.default_rate if metrics.summary else 0.0,
+                "bikes_available": metrics.bikes_available,
+                "bikes_assigned": metrics.bikes_assigned,
+                "bikes_maintenance": metrics.bikes_maintenance,
+                "processing_rate": metrics.processing_rate,
+                "agent_efficiency_score": metrics.agent_efficiency_score,
+                "agent_workload_indicator": metrics.agent_workload_indicator,
+            }
+        else:
+            data = metrics if isinstance(metrics, dict) else {}
+        
+        await self.broadcast({
+            "type": "voltledger_update",
+            "timestamp": datetime.utcnow().isoformat(),
+            "data": data,
+        })
 
 
 # Global connection manager
@@ -451,6 +666,12 @@ async def broadcast_loop():
             agents = await registry.get_all_agents()
             for agent in agents:
                 await manager.broadcast_agent_update(agent)
+            
+            # Broadcast VoltLedger updates if available
+            if VOLTLEDGER_AVAILABLE and voltledger_bridge.is_initialized:
+                metrics = voltledger_bridge.metrics
+                if metrics:
+                    await manager.broadcast_voltledger_update(metrics)
     except asyncio.CancelledError:
         pass
 
@@ -618,6 +839,237 @@ async def update_task_progress_endpoint(task_id: str, progress: float):
     
     await manager.broadcast_task_update(task)
     return {"message": "Task progress updated", "task": task.model_dump()}
+
+
+# ============================================================================
+# VoltLedger Bridge Endpoints
+# ============================================================================
+
+def _map_loan_to_task(loan_dict: Dict) -> VoltLedgerTaskItem:
+    """Map VoltLedger loan to dashboard task item"""
+    status_mapping = {
+        "pending": "pending",
+        "approved": "running",
+        "active": "running",
+        "completed": "completed",
+        "defaulted": "failed",
+        "rejected": "cancelled",
+    }
+    
+    status = loan_dict.get("status", "pending")
+    progress = loan_dict.get("progress", 0.0)
+    
+    # Determine priority based on status and amount
+    amount = loan_dict.get("amount", 0)
+    if status == "defaulted":
+        priority = "high"
+    elif amount > 5000:
+        priority = "high"
+    elif amount > 2000:
+        priority = "medium"
+    else:
+        priority = "low"
+    
+    created_at = loan_dict.get("created_at")
+    created_str = None
+    if created_at:
+        if isinstance(created_at, datetime):
+            created_str = created_at.isoformat()
+        else:
+            created_str = str(created_at)
+    
+    # Create descriptive title and description
+    bike_model = loan_dict.get("metadata", {}).get("bike_model", "Unknown Bike")
+    customer_name = loan_dict.get("metadata", {}).get("customer_name", "Customer")
+    
+    title = f"Loan: {customer_name} - ${amount:,.0f}"
+    description = f"{bike_model} | Progress: {progress:.1f}% | Status: {status}"
+    
+    return VoltLedgerTaskItem(
+        id=loan_dict.get("id", "unknown"),
+        type="voltledger_loan",
+        title=title,
+        description=description,
+        status=status_mapping.get(status, status),
+        progress=progress,
+        created_at=created_str,
+        priority=priority,
+        assigned_to=loan_dict.get("assigned_loan_id"),
+        metadata={
+            "amount": amount,
+            "bike_id": loan_dict.get("bike_id"),
+            "customer_id": loan_dict.get("customer_id"),
+            "original_status": status,
+        }
+    )
+
+
+def _map_bike_to_workload(bike_dict: Dict) -> VoltLedgerAgentWorkload:
+    """Map VoltLedger bike to agent workload indicator"""
+    status = bike_dict.get("status", "available")
+    battery_health = bike_dict.get("battery_health", 100.0)
+    
+    maintenance_required = (
+        status == "maintenance" or 
+        battery_health < 50 or
+        bike_dict.get("mileage", 0) > 1000
+    )
+    
+    # Map bike to a representative agent based on status
+    if status == "assigned":
+        assigned_agent = "volt_fintech"
+    elif status == "maintenance":
+        assigned_agent = "volt_devops"
+    else:
+        assigned_agent = None
+    
+    return VoltLedgerAgentWorkload(
+        bike_id=bike_dict.get("id", "unknown"),
+        model=bike_dict.get("model", "Unknown"),
+        status=status,
+        assigned_agent=assigned_agent,
+        battery_health=battery_health,
+        mileage=bike_dict.get("mileage", 0.0),
+        maintenance_required=maintenance_required,
+        location=bike_dict.get("location"),
+    )
+
+
+@app.get("/api/voltledger/status", response_model=VoltLedgerStatusResponse)
+async def get_voltledger_status():
+    """Get VoltLedger bridge connection status"""
+    if not VOLTLEDGER_AVAILABLE:
+        return VoltLedgerStatusResponse(
+            connected=False,
+            status="unavailable",
+            message="VoltLedger client module not available",
+            polling_interval=30,
+            base_url="http://localhost:5000",
+        )
+    
+    last_sync = voltledger_bridge.last_sync
+    last_sync_str = last_sync.isoformat() if last_sync else None
+    
+    status = "connected" if voltledger_bridge.is_connected else "disconnected"
+    if voltledger_bridge.metrics and voltledger_bridge.metrics.connection_status:
+        status = voltledger_bridge.metrics.connection_status.value
+    
+    return VoltLedgerStatusResponse(
+        connected=voltledger_bridge.is_connected,
+        status=status,
+        last_sync=last_sync_str,
+        sync_count=voltledger_bridge.sync_count,
+        polling_interval=30,
+        base_url="http://localhost:5000",
+        message="VoltLedger bridge operational" if voltledger_bridge.is_initialized else "VoltLedger bridge not initialized",
+    )
+
+
+@app.get("/api/voltledger/metrics", response_model=VoltLedgerMetricsResponse)
+async def get_voltledger_metrics():
+    """Get aggregated VoltLedger metrics for dashboard"""
+    if not VOLTLEDGER_AVAILABLE or not voltledger_bridge.is_initialized:
+        raise HTTPException(
+            status_code=503, 
+            detail="VoltLedger bridge not available"
+        )
+    
+    metrics = voltledger_bridge.metrics
+    if not metrics:
+        raise HTTPException(
+            status_code=503,
+            detail="No metrics available from VoltLedger"
+        )
+    
+    # Map loans to tasks
+    tasks = []
+    if metrics.recent_loans:
+        for loan in metrics.recent_loans[:20]:  # Limit to 20 most recent
+            loan_dict = loan.model_dump() if hasattr(loan, 'model_dump') else loan.__dict__
+            tasks.append(_map_loan_to_task(loan_dict))
+    
+    # Map bikes to workloads
+    workloads = []
+    if metrics.bikes:
+        for bike in metrics.bikes:
+            bike_dict = bike.model_dump() if hasattr(bike, 'model_dump') else bike.__dict__
+            workloads.append(_map_bike_to_workload(bike_dict))
+    
+    last_sync_str = None
+    if metrics.last_sync:
+        last_sync_str = metrics.last_sync.isoformat() if isinstance(metrics.last_sync, datetime) else str(metrics.last_sync)
+    
+    # Build response
+    response = VoltLedgerMetricsResponse(
+        connection_status=metrics.connection_status.value,
+        last_sync=last_sync_str,
+        
+        # Loan metrics
+        total_loans=metrics.summary.total_loans if metrics.summary else 0,
+        active_loans=metrics.summary.active_loans if metrics.summary else 0,
+        pending_loans=metrics.summary.pending_loans if metrics.summary else 0,
+        completed_loans=metrics.summary.completed_loans if metrics.summary else 0,
+        defaulted_loans=metrics.summary.defaulted_loans if metrics.summary else 0,
+        default_rate=metrics.summary.default_rate if metrics.summary else 0.0,
+        
+        # Financial metrics
+        total_amount=metrics.summary.total_amount if metrics.summary else 0.0,
+        total_repaid=metrics.summary.total_repaid if metrics.summary else 0.0,
+        avg_loan_duration_days=metrics.summary.avg_loan_duration_days if metrics.summary else 0.0,
+        
+        # Bike metrics
+        bikes_available=metrics.bikes_available,
+        bikes_assigned=metrics.bikes_assigned,
+        bikes_maintenance=metrics.bikes_maintenance,
+        total_bikes=len(metrics.bikes),
+        
+        # Agent efficiency metrics
+        processing_rate=metrics.processing_rate,
+        agent_efficiency_score=metrics.agent_efficiency_score,
+        agent_workload_indicator=metrics.agent_workload_indicator,
+        
+        # Dashboard integration
+        tasks=tasks,
+        workloads=workloads,
+    )
+    
+    return response
+
+
+@app.post("/api/voltledger/sync", response_model=VoltLedgerSyncResponse)
+async def trigger_voltledger_sync():
+    """Trigger manual sync with VoltLedger API"""
+    if not VOLTLEDGER_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="VoltLedger client module not available"
+        )
+    
+    if not voltledger_bridge.is_initialized:
+        raise HTTPException(
+            status_code=503,
+            detail="VoltLedger bridge not initialized"
+        )
+    
+    success = await voltledger_bridge.sync()
+    
+    if success:
+        # Broadcast update to all connected clients
+        metrics = voltledger_bridge.metrics
+        if metrics:
+            await manager.broadcast_voltledger_update(metrics)
+        
+        return VoltLedgerSyncResponse(
+            success=True,
+            message="VoltLedger sync completed successfully",
+            data_freshness="fresh"
+        )
+    else:
+        return VoltLedgerSyncResponse(
+            success=False,
+            message="VoltLedger sync failed - check connection",
+            data_freshness="stale"
+        )
 
 
 # ============================================================================
