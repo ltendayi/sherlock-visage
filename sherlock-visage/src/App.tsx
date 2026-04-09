@@ -26,6 +26,7 @@ class ErrorBoundary extends React.Component<
 import { AuthOverlay } from './components/auth/AuthOverlay';
 import { BentoHeader } from './components/dashboard/BentoHeader';
 import { AgentRoster } from './components/dashboard/AgentRoster';
+import IsometricOffice from './components/visualization/IsometricOffice';
 import { CostChart } from './components/charts/CostChart';
 import { CrossSystemChart } from './components/charts/CrossSystemChart';
 import { TaskQueue } from './components/tasks/TaskQueue';
@@ -146,7 +147,9 @@ const App: React.FC = () => {
                     label: '3D Office',
                     children: (
                       <div className="h-full rounded-xl overflow-hidden border border-white/10" style={{ minHeight: '500px' }}>
-                        <SimpleVizFallback />
+                        <ErrorBoundary fallback={<SimpleVizFallback />}>
+                          <IsometricOffice simulationEnabled={true} />
+                        </ErrorBoundary>
                       </div>
                     )
                   },
