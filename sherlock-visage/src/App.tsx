@@ -1,5 +1,28 @@
 import * as React from 'react';
 import { Row, Col, Typography, Tabs, Card, Alert } from 'antd';
+
+// Simple Error Boundary
+class ErrorBoundary extends React.Component<
+  { children: React.ReactNode; fallback: React.ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: { children: React.ReactNode; fallback: React.ReactNode }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    console.error('ErrorBoundary caught:', error, info);
+  }
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
+    }
+    return this.props.children;
+  }
+}
 import { AuthOverlay } from './components/auth/AuthOverlay';
 import { BentoHeader } from './components/dashboard/BentoHeader';
 import { AgentRoster } from './components/dashboard/AgentRoster';
@@ -12,10 +35,7 @@ import { OperationsTimeline } from './components/timeline/OperationsTimeline';
 import { useWebSocket } from './hooks/useWebSocket';
 import './styles/vanta.css';
 
-// Dynamic import for R3F to prevent build-time errors
-const IsometricOffice = React.lazy(() => import('./components/visualization/IsometricOffice'));
-
-// Fallback 2D visualization when 3D fails
+// 2D fallback visualization when 3D fails or loading
 const SimpleVizFallback: React.FC = () => (
   <div style={{ 
     height: '100%', 
@@ -126,9 +146,7 @@ const App: React.FC = () => {
                     label: '3D Office',
                     children: (
                       <div className="h-full rounded-xl overflow-hidden border border-white/10" style={{ minHeight: '500px' }}>
-                        <React.Suspense fallback={<SimpleVizFallback />}>
-                          <IsometricOffice simulationEnabled={true} />
-                        </React.Suspense>
+                        <SimpleVizFallback />
                       </div>
                     )
                   },
