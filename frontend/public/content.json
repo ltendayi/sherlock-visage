@@ -1,0 +1,40 @@
+{
+  \"hero\": {
+    \"title\": \"Welcome to Our Site\",
+    \"subtitle\": \"Solving your problems with innovative solutions.\",
+    \"ctaText\": \"Get Started\",
+    \"ctaLink\": \"/getstarted\"
+  },
+  \"problem\": {
+    \"title\": \"The Problem\",
+    \"text\": \"In today's fast-paced world, businesses face numerous challenges in managing their content and client relationships.\"
+  },
+  \"chooseYourPath\": {
+    \"title\": \"Choose Your Path\",
+    \"paths\": [
+      {
+        \"title\": \"For Startups\",
+        \"description\": \"Tailored solutions for growing businesses.\",
+        \"link\": \"/startups\"
+      },
+      {
+        \"title\": \"For Enterprises\",
+        \"description\": \"Scalable solutions for large organizations.\",
+        \"link\": \"/enterprises\"
+      }
+    ]
+  },
+  \"clients\": {
+    \"title\": \"Our Clients\",
+    \"companies\": [
+      {
+        \"name\": \"Company A\",
+        \"logo\": \"https://via.placeholder.com/100x50?text=A\"
+      },
+      {
+        \"name\": \"Company B\",
+        \"logo\": \"https://via.placeholder.com/100x50?text=B\"
+      }
+    ]
+  }
+}
